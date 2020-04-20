@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail"
+  ],
+  "subPackages": [],
+  "window": {
+    "defaultTitle": "仿糗事百科App",
+    "titleBarColor": "#ffffff",
+    "backgroundColor": "#F8F8F8"
+  },
+  "usingComponents": {}
+}
