@@ -3,19 +3,95 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "首页",
-				"navigationBarBackgroundColor": "#F8F8F8"
+				"app-plus": {
+					"titleNView":{
+						"buttons":[
+							//  左边按钮
+							{
+								"color":"#FCC917",
+								 "float":"left" ,
+								 "colorPressed":"#BBBBBB",
+								 "fontSize":"22px",
+								 "text": "\ue609",
+								 "fontSrc":"/static/font/icon.ttf"
+							},
+							// 右边按钮
+							{
+								"color":"#111111",
+								 "float":"right" ,
+								 "colorPressed":"#BBBBBB",
+								 "fontSize":"22px",
+								 "text": "\ue653",
+								 "fontSrc":"/static/font/icon.ttf"
+							}
+						],
+						"searchInput": {
+							"align":"center",
+							"backgroundColor":"#F7F7F7",
+							"placeholder":"搜索糗事或笑话",
+							"borderRadius":"4px",
+							"placeholderColor":"#CCCCCC"
+						}
+					}
+				}
 			}
-		}
-	    ,{
-            "path" : "pages/demo/demo",
+		},
+		{
+            "path" : "pages/home/home",
             "style" : {}
-        }
+        },
+		{
+            "path" : "pages/news/news",
+            "style" : {}
+        },
+        {
+            "path" : "pages/papers/papers",
+            "style" : {}
+        },
+		{
+			//  带有demo的文件，就是基础框架的学习
+		    "path" : "pages/demo/demo",
+		    "style" : {
+				"navigationBarTitleText": "uniapp框架基础知识"
+			}
+		},{
+		    "path" : "pages/demo-bind-css/demo-bind-css",
+		    "style" : {}
+		}
     ],
+	"tabBar": {
+	    "color": "#7A7E83",
+	    "selectedColor": "#FCC917",
+	    "borderStyle": "black",
+	    "backgroundColor": "#FFFFFF",
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/tabbar/index.png",
+	        "selectedIconPath": "static/tabbar/indexed.png",
+	        "text": "糗事"
+	    }, {
+	        "pagePath": "pages/news/news",
+	        "iconPath": "static/tabbar/news.png",
+	        "selectedIconPath": "static/tabbar/newsed.png",
+	        "text": "动态"
+	    },
+		{
+		    "pagePath": "pages/papers/papers",
+		    "iconPath": "static/tabbar/paper.png",
+		    "selectedIconPath": "static/tabbar/papered.png",
+		    "text": "小纸条"
+		},
+		{
+		    "pagePath": "pages/home/home",
+		    "iconPath": "static/tabbar/home.png",
+		    "selectedIconPath": "static/tabbar/homeed.png",
+		    "text": "我的"
+		}]
+	},
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "仿糗事百科App",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F1F1F1"
+		// 背景颜色
+		"navigationBarBackgroundColor": "#FFFFFF"
 	}
 }

@@ -18,7 +18,7 @@
 	@import './common/uni.css';
 	
 	/*引入第三方图标库 */
-	@import './common/iconfont.css';
+	@import './common/icon.css';
 	
 	/*引入第三方动画库 */
 	@import './common/animate.css';
